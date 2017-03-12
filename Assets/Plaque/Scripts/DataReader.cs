@@ -19,15 +19,15 @@ public class DataReader : MonoBehaviour
 		m_data = new Dictionary<int, BuildingInfo> ();
 
 		foreach (var row in dictReader) {
-//			Debug.Log (row ["ID"] + ", " +
-//			row ["IMAGE"] + ", " +
-//			row ["ARCHITECT"] + ", " +
-//			row ["BUILDING"] + ", " +
-//			row ["HEX"] + ", " +
-//			row ["RGB"] + ", " +
-//			row ["QUOTE"] + ", " +
-//			row ["BLOCK"]
-//			);
+			Debug.Log (row ["ID"] + ", " +
+			row ["IMAGE"] + ", " +
+			row ["ARCHITECT"] + ", " +
+			row ["BUILDING"] + ", " +
+			row ["HEX"] + ", " +
+			row ["RGB"] + ", " +
+			row ["QUOTE"] + ", " +
+			row ["BLOCK"]
+			);
 
 			BuildingInfo info = new BuildingInfo ();
 			info.m_image = row ["IMAGE"];
